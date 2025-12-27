@@ -1,0 +1,21 @@
+complaint,__expected
+アプリが写真をアップロードしようとするたびにクラッシュします,contains-all:Software Bug
+プリンターがコンピューターに認識されません,contains-all:Hardware Malfunction
+パスワードの変更方法がわかりません,contains-all:User Error
+ウェブサイトが完全にダウンしており、どのページにもアクセスできません,contains-all:Service Outage
+アプリにダークモードオプションがあると素晴らしいです,contains-all:Feature Request
+大きなファイルを保存しようとするたびにソフトウェアがフリーズします,contains-all:Software Bug
+新しい電池を使ってもワイヤレスマウスが動作しません,contains-all:Hardware Malfunction
+誤って重要なファイルを削除してしまいました。復元できますか？,contains-all:User Error
+サーバーが応答していません。障害が発生していますか？,contains-all:Service Outage
+CSV形式でデータをエクスポートする機能を追加できますか？,contains-all:Feature Request
+"アプリがクラッシュしていて、電話が過熱しています","contains-all:Software Bug,Hardware Malfunction"
+パスワードを思い出せません！,contains-all:User Error
+新しいアップデートで何かが壊れ、アプリが動作しなくなりました,contains-all:Software Bug
+"何かを誤ってインストールしたようで、コンピューターが全く起動しなくなりました","contains-all:User Error,Hardware Malfunction"
+"サービスがダウンしており、ファイルを一括処理する機能が緊急に必要です","contains-all:Service Outage,Feature Request"
+グラフィックカードが変な音を立てています,contains-all:Hardware Malfunction
+キーボードが突然完全に動作しなくなりました,contains-all:Hardware Malfunction
+アプリを開くたびに電話が非常に遅くなります,contains-all:Software Bug
+インターフェースをもっと使いやすくできますか？メニューでいつも迷ってしまいます,"contains-all:Feature Request,User Error"
+クラウドストレージが同期しておらず、他のデバイスからファイルにアクセスできません,"contains-all:Software Bug,Service Outage"
