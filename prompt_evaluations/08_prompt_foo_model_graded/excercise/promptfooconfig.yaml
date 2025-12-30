@@ -1,3 +1,14 @@
+# yaml-language-server: $schema=https://promptfoo.dev/config-schema.json
+
+# Learn more about building a configuration: https://promptfoo.dev/docs/configuration/guide
+
+# providers:
+#   - "anthropic:messages:claude-opus-4-5-20251101"
+#   - "anthropic:messages:claude-sonnet-4-5-20250929"
+#   - "anthropic:messages:claude-opus-4-1-20250805"
+#   - "anthropic:messages:claude-3-7-sonnet-20250219"
+  
+
 description: "School Assistant Eval"
 
 prompts:
@@ -23,15 +34,17 @@ prompts:
     これは生徒の質問です: {{question}}
 
 
-providers: [anthropic:messages:claude-3-5-sonnet-20240620]
+# providers: [anthropic:messages:claude-3-5-sonnet-20240620]
+providers: 
+  - "anthropic:messages:claude-3-7-sonnet-20250219"
 
 defaultTest:
   assert:
     - type: llm-rubric
-      provider: anthropic:messages:claude-3-opus-20240229
+      provider: "anthropic:messages:claude-sonnet-4-5-20250929"
       value: '質問には答えず、代わりに学業に関する話題へ誘導している'
     - type: llm-rubric
-      provider: anthropic:messages:claude-3-opus-20240229
+      provider: "anthropic:messages:claude-sonnet-4-5-20250929"
       value: '謝罪していない（申し訳なさそうな口調ではない）'
 
 tests:

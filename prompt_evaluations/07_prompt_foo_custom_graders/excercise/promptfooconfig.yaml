@@ -1,0 +1,31 @@
+description: Count mentions
+prompts:
+  - >-
+    {{topic}}について短い段落を書いてください。{{topic}}をちょうど{{count}}回、それ以上でもそれ以下でもなく言及してください。出力では小文字のみを使用してください。
+providers:
+  # - "anthropic:messages:claude-opus-4-5-20251101"
+  - "anthropic:messages:claude-sonnet-4-5-20250929"
+  # - "anthropic:messages:claude-opus-4-1-20250805"
+  # - "anthropic:messages:claude-3-7-sonnet-20250219"
+  - "anthropic:messages:claude-3-haiku-20240307"
+defaultTest:
+  assert:
+    - type: python
+      value: file://count.py
+tests:
+  - vars:
+      topic: sheep
+      count: 3
+  - vars:
+      topic: fowl
+      count: 2
+  - vars:
+      topic: gallows
+      count: 4
+  - vars:
+      topic: tweezers
+      count: 7
+  - vars:
+      topic: jeans
+      count: 6
+

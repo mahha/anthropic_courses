@@ -1,0 +1,19 @@
+# yaml-language-server: $schema=https://promptfoo.dev/config-schema.json
+
+# Learn more about building a configuration: https://promptfoo.dev/docs/configuration/guide
+
+description: "Complaint Classification Eval"
+
+prompts:
+  - prompts.py:basic_prompt
+  - prompts.py:improved_prompt
+  
+
+providers:
+  # - "anthropic:messages:claude-opus-4-5-20251101"
+  - "anthropic:messages:claude-sonnet-4-5-20250929"
+  # - "anthropic:messages:claude-opus-4-1-20250805"
+  # - "anthropic:messages:claude-3-7-sonnet-20250219"
+  - "anthropic:messages:claude-3-haiku-20240307"
+
+tests: dataset.csv

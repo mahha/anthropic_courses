@@ -1,6 +1,7 @@
 import anthropic
 import os
 import json
+import time
 
 def llm_eval(summary, article):
     """
@@ -111,7 +112,9 @@ def llm_eval(summary, article):
     
     評価する要約：<summary>{summary}</summary>
     """
-    
+    time.sleep(60)
+    print("Waiting for 60 seconds")
+
     response = client.messages.create(
         # model="claude-3-5-sonnet-20240620",
         model="claude-sonnet-4-5-20250929",
